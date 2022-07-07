@@ -1,49 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./menu.js"></script>
+
   <title>BrunaLinks</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap" />
 </head>
 
-<body class="red">
-  <div class="container">
+<body id="body">
+  <div id="menu" class="menubar">
 
-    <img class="profile"
-      src="https://github.com/Bruna-Carlette.png"
-      alt="Imagem de perfil da Bruna Carlette"/>
+    <button href="#" onclick="closeNav()">&times;</button>
+
+    <ul>
+      <li onclick="changeTheme('dark-blue')">Modo Dark Blue</li>
+      <li onclick="changeTheme('dark-pink')">Modo Dark Pink</li>
+      <li onclick="changeTheme('purple')">Modo Dark Purple</li>
+      <li onclick="changeTheme('')">Modo Light Blue</li>
+      <li onclick="changeTheme('pink')">Modo Light Pink</li>
+      <li onclick="changeTheme('red')">Modo Light Red</li>
+      <li onclick="changeTheme('black')">Modo Black</li>
+    </ul>
+  </div>
+
+  <button class="menubutton" onclick="openNav()">&#9776</button>
+
+  <div class="container">
+    <img class="profile" src="https://github.com/Bruna-Carlette.png" alt="Imagem de perfil da Bruna Carlette" />
     <h1>Bruna Carlette</h1>
     <p>@bruna_carlette</p>
 
     <ul>
-      <li>
-        <a href="https://api.whatsapp.com/send/?phone=5528999510607&text&type=phone_number&app_absent=0"
-          target="_blank"> ✅ Whatsapp</a>
+      <li><a href="https://api.whatsapp.com/send/?phone=5528999510607&text&type=phone_number&app_absent=0"
+          target="_blank">✅ Whatsapp</a></li>
+      <li><a href="https://www.instagram.com/bruna_carlette/" target="_blank">📷 Intagram</a></li>
+      <li><a href="https://app.rocketseat.com.br/me/bruna-carlette-teixeira-09048" target="_blank">🚀 Rocketseat</a>
       </li>
-      <li>
-        <a href="https://www.instagram.com/bruna_carlette/" target="_blank">📷 Intagram</a>
-      </li>
-      <li>
-        <a href="https://app.rocketseat.com.br/me/bruna-carlette-teixeira-09048" target="_blank"> 🚀 Rocketseat</a>
-      </li>
-      <li>
-        <a href="https://github.com/Bruna-Carlette" target="_blank">🐱 Github</a>
-      </li>
+      <li><a href="https://github.com/Bruna-Carlette" target="_blank">🐱 Github</a></li>
     </ul>
 
-    <footer>
-      Feito com 💜 por Rocketseat
-    </footer>
-
+    <footer>Feito com ❤ por Bruna Carlette</footer>
   </div>
+
 </body>
 
 </html>
